@@ -1,6 +1,6 @@
-# fruits_app
+# Fruits
 
-A new Flutter project.
+🛒 E-Commerce App
 
 ## Getting Started
 
