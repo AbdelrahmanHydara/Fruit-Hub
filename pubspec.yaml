@@ -37,6 +37,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   # For Adapting Screen And Font Size.
   flutter_screenutil: ^5.9.0
+  # An SVG Rendering And Widget Library For Flutter, Which Allows Painting.
+  flutter_svg: ^2.0.9
 
 
 dev_dependencies:
