@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:fruits_app/core/routing/my_router.dart';
 import 'package:fruits_app/core/routing/routes.dart';
@@ -9,6 +10,13 @@ class FruitsApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(
+      const SystemUiOverlayStyle(
+        statusBarColor: Colors.white,
+        statusBarIconBrightness: Brightness.dark,
+      ),
+    );
+
     return ScreenUtilInit(
       designSize: const Size(380, 820),
       minTextAdapt: true,
