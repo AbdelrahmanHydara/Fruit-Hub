@@ -1,3 +1,3 @@
-# Fruits 🥭
+# Fruit Hub 🥭
 
 🛒 E-Commerce App
