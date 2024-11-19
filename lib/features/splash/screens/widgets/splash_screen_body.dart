@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:fruits_app/core/constants.dart';
 import 'package:fruits_app/core/routing/routes.dart';
+import 'package:fruits_app/core/services/shared_pref_singleton.dart';
 
 class SplashScreenBody extends StatefulWidget {
   const SplashScreenBody({super.key});
@@ -23,7 +25,7 @@ class _SplashScreenBodyState extends State<SplashScreenBody> {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         Row(
-          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.end,
           children: [
             SvgPicture.asset("assets/svg/plant.svg"),
           ],
@@ -38,9 +40,14 @@ class _SplashScreenBodyState extends State<SplashScreenBody> {
   }
 
   void executeNavigation() {
-    Future.delayed( const Duration(seconds: 4), ()
-    {
-      Navigator.pushReplacementNamed(context, Routes.onBoardingScreen);
+    bool isOnBoarding = SharedPrefSingleton.getBool(isOnBoardingSeen);
+
+    Future.delayed( const Duration(seconds: 4), () {
+      if(isOnBoarding) {
+        Navigator.pushReplacementNamed(context, Routes.loginScreen);
+      } else {
+        Navigator.pushReplacementNamed(context, Routes.onBoardingScreen);
+      }
     }
     );
   }

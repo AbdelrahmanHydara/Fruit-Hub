@@ -12,7 +12,7 @@ class FruitsApp extends StatelessWidget {
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(
       const SystemUiOverlayStyle(
-        statusBarColor: Colors.white,
+        statusBarColor: Colors.transparent,
         statusBarIconBrightness: Brightness.dark,
       ),
     );
@@ -24,8 +24,16 @@ class FruitsApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         initialRoute: Routes.splashScreen,
         onGenerateRoute: MyRouter.generateRoute,
-        // themeMode: ThemeMode.system,
-        // theme: MyTheme.darkTheme,
+        theme: ThemeData(
+          fontFamily: 'Cairo',
+          scaffoldBackgroundColor: Colors.white,
+        ),
+        builder: (context, child) {
+          return Directionality(
+            textDirection: TextDirection.rtl,
+            child: child!,
+          );
+        },
       ),
     );
   }
