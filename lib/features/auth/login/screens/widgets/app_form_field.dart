@@ -9,14 +9,14 @@ class AppFormField extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        verticalSpace(24),
+        verticalSpace(30),
         AppTextFormField(
           keyboardType: TextInputType.emailAddress,
           hintText: "البريد الإلكتروني",
         ),
         verticalSpace(20),
         AppTextFormField(
-          keyboardType: TextInputType.emailAddress,
+          keyboardType: TextInputType.visiblePassword,
           hintText: "كلمة المرور",
           suffixIcon: Icon(
             Icons.remove_red_eye_rounded,

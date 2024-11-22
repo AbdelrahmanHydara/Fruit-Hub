@@ -8,7 +8,6 @@ import 'package:fruits_app/core/widgets/app_button.dart';
 import 'package:fruits_app/core/widgets/or_divider.dart';
 import 'app_form_field.dart';
 import 'dont_have_an_account.dart';
-import 'social_button.dart';
 import 'social_login.dart';
 
 class LoginScreenBody extends StatelessWidget {
@@ -34,7 +33,7 @@ class LoginScreenBody extends StatelessWidget {
             const DontHaveAnAccount(),
             verticalSpace(32),
             const OrDivider(),
-            verticalSpace(32),
+            verticalSpace(30),
             const SocialLogin(),
           ],
         ),
