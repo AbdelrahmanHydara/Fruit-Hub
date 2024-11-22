@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:fruits_app/core/theming/app_colors.dart';
+import 'package:fruits_app/core/theming/app_text_styles.dart';
 
 class AppButton extends StatelessWidget {
   const AppButton({super.key, required this.text, required this.onPressed,});
@@ -23,7 +24,7 @@ class AppButton extends StatelessWidget {
           onPressed: onPressed,
           child: Text(
             text,
-            style: TextStyle(
+            style: AppTextStyles.bold16.copyWith(
               color: Colors.white,
             ),
           )

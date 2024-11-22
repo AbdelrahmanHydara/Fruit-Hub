@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:fruits_app/core/routing/my_router.dart';
 import 'package:fruits_app/core/routing/routes.dart';
+import 'package:fruits_app/core/theming/app_colors.dart';
 
 class FruitsApp extends StatelessWidget {
 
@@ -26,6 +27,9 @@ class FruitsApp extends StatelessWidget {
         onGenerateRoute: MyRouter.generateRoute,
         theme: ThemeData(
           fontFamily: 'Cairo',
+          colorScheme: ColorScheme.fromSeed(
+              seedColor: AppColors.primaryColor,
+          ),
           scaffoldBackgroundColor: Colors.white,
         ),
         builder: (context, child) {
