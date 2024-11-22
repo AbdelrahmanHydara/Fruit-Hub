@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:fruits_app/core/helpers/spacing.dart';
 import 'package:fruits_app/core/widgets/app_text_form_field.dart';
 
-class AppFormField extends StatelessWidget {
-  const AppFormField({super.key});
+class LoginFormField extends StatelessWidget {
+  const LoginFormField({super.key});
 
   @override
   Widget build(BuildContext context) {

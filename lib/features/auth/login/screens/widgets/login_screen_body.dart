@@ -6,9 +6,8 @@ import 'package:fruits_app/core/theming/app_colors.dart';
 import 'package:fruits_app/core/theming/app_text_styles.dart';
 import 'package:fruits_app/core/widgets/app_button.dart';
 import 'package:fruits_app/core/widgets/or_divider.dart';
-import 'app_form_field.dart';
+import 'login_form_field.dart';
 import 'dont_have_an_account.dart';
-import 'social_button.dart';
 import 'social_login.dart';
 
 class LoginScreenBody extends StatelessWidget {
@@ -22,7 +21,7 @@ class LoginScreenBody extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
-            const AppFormField(),
+            const LoginFormField(),
             buildForgetPassword(),
             verticalSpace(32),
             AppButton(
