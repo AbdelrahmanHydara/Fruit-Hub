@@ -9,4 +9,3 @@ SizedBox horizontalSpace(double width) => SizedBox(
   width: width.w,
 );
 
-const AppHorizontalPadding = 18.0;
