@@ -4,7 +4,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:fruits_app/core/theming/app_text_styles.dart';
 
 class SocialButton extends StatelessWidget {
-  const SocialButton({super.key, required this.image, required this.text, required this.onPressed});
+  const SocialButton({super.key,
+    required this.image, required this.text, required this.onPressed});
 
   final String image, text;
   final void Function() onPressed;
