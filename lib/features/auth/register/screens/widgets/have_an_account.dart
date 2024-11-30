@@ -4,8 +4,8 @@ import 'package:fruits_app/core/routing/routes.dart';
 import 'package:fruits_app/core/theming/app_colors.dart';
 import 'package:fruits_app/core/theming/app_text_styles.dart';
 
-class DontHaveAnAccount  extends StatelessWidget {
-  const DontHaveAnAccount ({super.key});
+class HaveAnAccount  extends StatelessWidget {
+  const HaveAnAccount ({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,17 +13,17 @@ class DontHaveAnAccount  extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
-          "لا تمتلك حساب؟",
+          "تمتلك حساب بالفعل؟",
           style: AppTextStyles.semiBold16.copyWith(
             color: AppColors.lightGeryColor,
           ),
         ),
         TextButton(
           onPressed: () {
-            context.pushNamed(Routes.registerScreen);
+            context.pushReplacementNamed(Routes.loginScreen);
           },
           child: Text(
-          "قم بإنشاء حساب",
+          "تسجيل الدخول",
           style: AppTextStyles.semiBold16.copyWith(
             color: AppColors.primaryColor,),
           ),
